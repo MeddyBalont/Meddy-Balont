@@ -8,7 +8,7 @@ import fitlift from "../../assets/fitlift.png";
 const Projects = () => {
      return (
           <section id="projects" className={styles.container}>
-               <h1 className="sectionTitle">Projects</h1>
+               <h1 className="sectionTitle">Projets</h1>
                <div className={styles.projectsContainer}>
                     <ProjectCard
                          src={viberr}

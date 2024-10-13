@@ -55,12 +55,12 @@ function Hero() {
                     <p className={styles.description}>
                          Je pense codes, je mange code et je vis pour le code.
                     </p>
+                    <a href={CV} download>
+                         <button className="hover" download>
+                              Resume
+                         </button>
+                    </a>
                </div>
-               <a href={CV} download>
-                    <button className="hover" download>
-                         Resume
-                    </button>
-               </a>
           </section>
      );
 }
