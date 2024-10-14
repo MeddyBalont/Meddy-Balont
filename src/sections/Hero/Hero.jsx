@@ -1,5 +1,5 @@
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/hero-img.png";
+import heroImg from "../../assets/Design sans titre.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import twitterLight from "../../assets/twitter-light.svg";
@@ -40,9 +40,9 @@ function Hero() {
                     </h1>
                     <h2>Front-end Developer</h2>
                     <span>
-                         <a href="https://x.com/MBalont">
+                         {/* <a href="https://x.com/MBalont">
                               <img src={twitterIcon} alt="Twitter icon" />
-                         </a>
+                         </a> */}
 
                          <a href="https://github.com/MeddyBalont">
                               <img src={githubIcon} alt="Github icon" />
@@ -53,11 +53,11 @@ function Hero() {
                          </a>
                     </span>
                     <p className={styles.description}>
-                         Je pense codes, je mange code et je vis pour le code.
+                         "Les gens ne cesseront jamais d'avoir des rêves"
                     </p>
                     <a href={CV} download>
                          <button className="hover" download>
-                              Resume
+                              CV
                          </button>
                     </a>
                </div>

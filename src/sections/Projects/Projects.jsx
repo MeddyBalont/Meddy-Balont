@@ -1,9 +1,9 @@
 import styles from "./ProjectsStyles.module.css";
-import viberr from "../../assets/viberr.png";
+import kasa from "../../assets/Kasa-maison.jpg";
+import kanap from "../../assets/kanap-blue.jpg";
+import montagne from "../../assets/En montagne randonné.png";
 import ProjectCard from "../../common/ProjectCard";
-import freshBurger from "../../assets/fresh-burger.png";
-import hipsster from "../../assets/hipsster.png";
-import fitlift from "../../assets/fitlift.png";
+import connection from "../../assets/Connection.png";
 
 const Projects = () => {
      return (
@@ -11,28 +11,28 @@ const Projects = () => {
                <h1 className="sectionTitle">Projets</h1>
                <div className={styles.projectsContainer}>
                     <ProjectCard
-                         src={viberr}
+                         src={kasa}
+                         link={"https://github.com/MeddyBalont/Kasa_Projet_Final"}
+                         h3="Kasa"
+                         p="Application web"
+                    />
+                    <ProjectCard
+                         src={kanap}
+                         link={"https://github.com/MeddyBalont/kanap"}
+                         h3="Kanap"
+                         p="Site e-commerce"
+                    />
+                    <ProjectCard
+                         src={montagne}
                          link={"https://meddybalont.github.io/En_montagne/"}
-                         h3="à changer"
+                         h3="En montagne"
                          p="Site vitrine"
                     />
                     <ProjectCard
-                         src={freshBurger}
-                         link={"https://meddybalont.github.io/En_montagne/"}
-                         h3="à changer"
-                         p="à changer"
-                    />
-                    <ProjectCard
-                         src={hipsster}
-                         link={"https://meddybalont.github.io/En_montagne/"}
-                         h3="à changer"
-                         p="à changer"
-                    />
-                    <ProjectCard
-                         src={fitlift}
-                         link={"https://meddybalont.github.io/En_montagne/"}
-                         h3="à changer"
-                         p="à changer"
+                         src={connection}
+                         link={"https://meddybalont.github.io/Helium/"}
+                         h3="Helium"
+                         p="Site vitrine"
                     />
                </div>
           </section>
