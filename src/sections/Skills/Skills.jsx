@@ -1,28 +1,32 @@
 import styles from "./SkillsStyles.module.css";
 import checkMarkIcon from "../../assets/checkmark-dark.svg";
+import checkMarkDark from "../../assets/checkmark-light.svg";
 import SkillList from "../../common/SkillList";
+import { useTheme } from "../../common/ThemeContext";
 
 const Skills = () => {
+     const { theme } = useTheme();
+     const checkMark = theme === "light" ? checkMarkDark : checkMarkIcon;
      return (
           <section id="skills" className={styles.container}>
                <h1 className="sectionTitle">Compétences</h1>
                <div className={styles.skillList}>
-                    <SkillList src={checkMarkIcon} skill="HTML" />
-                    <SkillList src={checkMarkIcon} skill="CSS" />
-                    <SkillList src={checkMarkIcon} skill="Javascript" />
-                    <SkillList src={checkMarkIcon} skill="Node" />
+                    <SkillList src={checkMark} skill="HTML" />
+                    <SkillList src={checkMark} skill="CSS" />
+                    <SkillList src={checkMark} skill="Javascript" />
+                    <SkillList src={checkMark} skill="Node" />
                </div>
                <hr />
                <div className={styles.skillList}>
-                    <SkillList src={checkMarkIcon} skill="React" />
-                    <SkillList src={checkMarkIcon} skill="Vite" />
-                    <SkillList src={checkMarkIcon} skill="Sass" />
+                    <SkillList src={checkMark} skill="React" />
+                    <SkillList src={checkMark} skill="Vite" />
+                    <SkillList src={checkMark} skill="Sass" />
                </div>
                <hr />
                <div className={styles.skillList}>
-                    <SkillList src={checkMarkIcon} skill="Git" />
-                    <SkillList src={checkMarkIcon} skill="Github" />
-                    <SkillList src={checkMarkIcon} skill="MongoDB" />
+                    <SkillList src={checkMark} skill="Git" />
+                    <SkillList src={checkMark} skill="Github" />
+                    <SkillList src={checkMark} skill="MongoDB" />
                </div>
           </section>
      );
