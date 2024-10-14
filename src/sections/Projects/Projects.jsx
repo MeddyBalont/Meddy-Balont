@@ -15,24 +15,28 @@ const Projects = () => {
                          link={"https://github.com/MeddyBalont/Kasa_Projet_Final"}
                          h3="Kasa"
                          p="Application web"
+                         target="_blank"
                     />
                     <ProjectCard
                          src={kanap}
                          link={"https://github.com/MeddyBalont/kanap"}
                          h3="Kanap"
                          p="Site e-commerce"
+                         target="_blank"
                     />
                     <ProjectCard
                          src={montagne}
                          link={"https://meddybalont.github.io/En_montagne/"}
                          h3="En montagne"
                          p="Site vitrine"
+                         target="_blank"
                     />
                     <ProjectCard
                          src={connection}
                          link={"https://meddybalont.github.io/Helium/"}
                          h3="Helium"
                          p="Site vitrine"
+                         target="_blank"
                     />
                </div>
           </section>
